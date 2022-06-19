@@ -1,0 +1,72 @@
+#mybatis:
+#  configuration:
+#    map-underscore-to-camel-case: true
+#  mapper-locations: classpath:mappers/*xml
+#  type-aliases-package: com.neuedu.firstspringitem.model.entity
+#server:
+#  port: 8080
+#spring:
+#  application:
+#    name: FirstSpringItem
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    name: defaultDataSource
+#    password: Lcy201015
+#    url: jdbc:mysql://localhost:3306/dongruanjdbc?serverTimezone=UTC
+#    username: root
+#  mvc:
+#    view:
+#      prefix: /
+#      suffix: .html
+#  profiles:
+#    active: pro
+
+#######################以上为MyBatis的配置################################
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl   #打印mybatis的SQL语句
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mappers/*xml
+  type-aliases-package: com.example.movie.model.entity  #改，实体包的别名映射
+spring:
+  application:
+    name: oaItem #改，项目名
+  datasource:
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+    driver-class-name: com.mysql.cj.jdbc.Driver   #改，MySQL的驱动
+    filters: stat,wall,log4j
+    initialSize: 5
+    maxActive: 20
+    maxPoolPreparedStatementPerConnectionSize: 20
+    maxWait: 60000
+    minEvictableIdleTimeMillis: 300000
+    minIdle: 5
+    name: defaultDataSource
+    password: Lcy201015  #改，数据库密码
+    poolPreparedStatements: true
+    testOnBorrow: false
+    testOnReturn: false
+    testWhileIdle: true
+    timeBetweenEvictionRunsMillis: 60000
+    url: jdbc:mysql://localhost:3306/oaitem?serverTimezone=UTC #改，
+    username: root # 改，数据库用户名
+    validationQuery: SELECT 1 FROM DUAL
+  mvc:
+    view:
+      prefix: /JSP/    #视图解析器的前缀
+      suffix: .jsp  #视图解析器的后缀
+  profiles:
+    active: pro   #启动的生产环境
+  redis:
+    database: 0  #默认使用0数据库
+    host: 127.0.0.1   #redis服务器IP
+    jedis:
+      pool:
+        max-active: 20
+        max-idle: 10
+        max-wait: -1
+        min-idle: 0
+    password: ''    #redis服务器密码
+    port: 6379      #改，redis服务器端口
+    timeout: 1000

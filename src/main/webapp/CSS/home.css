@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(0,112,162);
+}
+.nav>p{
+    font-size: 30px;
+    color: rgb(239,249,250);
+    line-height: 60px;
+}
+.nav_left{
+    float: left;
+    margin-left: 20px;
+
+}
+.nav_right{
+    float: right;
+    margin-right: 50px;
+}
+.nav_title{
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgb(235,235,235);
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.content{
+    width: 1514px;
+    height: 100%;
+    border-right: 2px solid rgb(235,235,235);
+    border-left: 2px solid rgb(235,235,235);
+    border-bottom: 2px solid rgb(235,235,235);
+}
+.content_left{
+    width: 14%;
+    height: 100%;
+    border-right:2px solid rgb(235,235,235);
+    float: left;
+    background-color: rgb(80,82,84);
+}
+.menu{
+    width: 100%;
+    height: 100%;
+}
+.menu>li{
+    margin: 10px 0px;
+    padding-left: 75px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.menu li:nth-child(1),.menu li:nth-child(5),.menu li:nth-child(7){
+    font-size: 18px;
+    margin-top: 30px;
+    padding-left: 35px;
+}
+iframe{
+    width: 85.85%;
+    height: 100%;
+    float: right;
+    margin: 0;
+    padding: 0;
+    border: none;
+}

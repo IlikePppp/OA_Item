@@ -1,0 +1,26 @@
+movie:
+  image:
+    author: 阿道夫
+    download:
+      path: E:/ideaItem/imgs/images/
+    upload:
+      path: E:/ideaItem/imgs/images/
+server:
+  port: 7070
+#文件上传的配置
+spring:
+  servlet:
+    multipart:
+      location: ''
+      max-file-size: 10MB
+      max-request-size: 200MB
+      resolve-lazily: false
+#myBatis日志显示配置
+logging:
+  level:
+    com:
+      neuedu:
+        firstspringitem:
+          mapper: debug
+images:
+  location: E:/ideaItem/imgs/images
