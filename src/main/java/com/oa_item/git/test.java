@@ -6,5 +6,6 @@ public class test {
         System.out.println("这是hot-fix 第一次修改！！！");
         System.out.println("这是master 第一次修改！！！");
         System.out.println("这是hot-fix 第二次修改！！！");
+        System.out.println("这是Idea-push 第一次修改！！！");
     }
 }
